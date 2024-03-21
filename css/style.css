@@ -150,7 +150,7 @@ header .navbar .navbar-nav .button a:nth-child(2):hover {
 .hero-banner {
   height: 100vh;
 }
-.hero-banner .banner {
+.hero-banner .banner .row {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -165,6 +165,9 @@ header .navbar .navbar-nav .button a:nth-child(2):hover {
   font-family: "Moul", serif;
   font-weight: 500;
 }
+.hero-banner .banner .title-banner .text h1 span {
+  color: #0363ff;
+}
 .hero-banner .banner .title-banner .text small {
   font-size: 14px;
   color: #919191;
@@ -172,6 +175,7 @@ header .navbar .navbar-nav .button a:nth-child(2):hover {
 .hero-banner .banner .title-banner .text p {
   font-size: 18px;
   margin: 10px;
+  line-height: 28px;
 }
 .hero-banner .banner .title-banner .button {
   margin-top: 20px;
@@ -182,15 +186,45 @@ header .navbar .navbar-nav .button a:nth-child(2):hover {
   border-radius: 35px;
   overflow: hidden;
 }
+.hero-banner .banner .box {
+  background-color: #86b2ff39;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+  width: 150px;
+  padding: 10px 0px;
+  border-radius: 10px;
+  color: #0062ff;
+}
+.hero-banner .banner .box h2 {
+  font-size: 25px;
+  font-weight: bold;
+}
+.hero-banner .banner .box p {
+  font-size: 15px;
+}
+
 .hero-banner .banner .pic-banner img {
-  width: 600px;
+  width: 580px;
+  margin-left: 20px;
   object-fit: cover;
+  animation: banner 3s infinite ease-in-out alternate;
 }
 .hero-banner .banner .title-banner .button a:hover {
   color: white;
 }
 .hero-banner .banner .title-banner .button .hvr-sweep-to-right:before {
   background-color: #3a86ff;
+}
+@keyframes banner {
+  from {
+    transform: scale(100%);
+  }
+  to {
+    transform: scale(105%);
+  }
 }
 /* !-----------End Banner -------------- */
 /* !----------Popular Courses-------- */
@@ -228,6 +262,7 @@ main .popular-courses .card {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   transition: 0.5s;
   cursor: pointer;
+  position: relative;
 }
 main .popular-courses .card .title {
   padding-left: 12px;
@@ -362,6 +397,37 @@ main .free-book .title-header-book {
 .free-book .card:hover .pic-book img {
   transform: scale(111%);
 }
+/* !-------------- why choose us ------------- */
+main .w-c-u {
+  margin: 35px 0px;
+}
+main .w-c-u .title {
+  font-size: 28px;
+  color: #0055dd;
+  text-align: center;
+  margin-bottom: 20px;
+}
+main .w-c-u .box {
+  background-color: #80b1ff3f;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+main .w-c-u .box i {
+  font-size: 35px;
+  color: #0062ff;
+}
+main .w-c-u .box h3 {
+  font-size: 20px;
+  color: #1a72ffec;
+}
+main .w-c-u .box p {
+  font-size: 16px;
+  line-height: 25px;
+  color: #3e3e3e;
+}
+
 /* !------------------ Contact US ---------------------- */
 main .contact-us {
   background: rgb(255, 255, 255);
