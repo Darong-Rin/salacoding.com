@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login Page</title>
+    <title>Sign Up Page</title>
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
@@ -17,7 +17,7 @@
 
   <body>
     <main>
-      <section class="form-login form-left-login-signup">
+      <section class="form-signup form-left-login-signup">
         <div class="bg-041B43"></div>
         <div class="container">
           <div class="row">
@@ -42,10 +42,36 @@
             <!-- !----------------------- -->
             <div class="col-6">
               <div
-                class="form-right mt-130 animate__animated animate__backInDown animate__slow"
+                class="form-right animate__animated animate__backInDown animate__slow"
               >
-                <h2 class="title-header">ចូលប្រើប្រាស់</h2>
+                <h2 class="title-header">ចុះឈ្មោះប្រើប្រាស់</h2>
                 <form action="">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="form-group">
+                        <label for="fname">នាមត្រកូល</label>
+                        <input
+                          type="text"
+                          id="fname"
+                          class="form-control"
+                          placeholder="បញ្ចូលនាមត្រកូលរបស់អ្នក"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="form-group">
+                        <label for="lname">នាមខ្លួន</label>
+                        <input
+                          type="text"
+                          id="lname"
+                          class="form-control"
+                          placeholder="បញ្ចូលនាមខ្លួនរបស់អ្នក"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </div>
                   <div class="row">
                     <div class="col-12">
                       <div class="form-group">
@@ -58,9 +84,6 @@
                           placeholder="example@gmail.com"
                           required
                         />
-                        <span class="icon"
-                          ><i class="fa-solid fa-user"></i
-                        ></span>
                       </div>
                     </div>
                   </div>
@@ -76,27 +99,38 @@
                           placeholder="ពាក្យសម្ងាត់"
                           required
                         />
-                        <span class="icon"
-                          ><i class="fa-solid fa-key"></i
-                        ></span>
                       </div>
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-6">
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label for="Cpassword">ផ្ទៀងផ្ទាត់ពាក្យសម្ងាត់</label>
+                        <input
+                          class="form-control"
+                          type="password"
+                          name="txtpassword"
+                          id="Cpassword"
+                          placeholder="ផ្ទៀងផ្ទាត់ពាក្យសម្ងាត់"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
                       <div class="checkbox">
                         <input
                           class="check-size"
                           type="checkbox"
                           name="txtcheckbox"
                           id="checkbox"
+                          required
                         />
-                        <label for="checkbox">ចងចាំគណនីរបស់ខ្ញុំ</label>
-                      </div>
-                    </div>
-                    <div class="col-6">
-                      <div class="forgot-password">
-                        <a href="#">ភ្លេចពាក្យសម្ងាត់?</a>
+                        <label for="checkbox"
+                          >ខ្ញុំបានអាននិងយល់ព្រមលើ
+                          <a href="#">គោលការណ៍ឯកជនភាព</a></label
+                        >
                       </div>
                     </div>
                   </div>
@@ -104,7 +138,7 @@
                     <div class="col-12">
                       <div class="button">
                         <button type="submit" class="btn btn-secondary">
-                          ចូលប្រើប្រាស់
+                          ចុះឈ្មោះ
                         </button>
                       </div>
                     </div>
@@ -114,16 +148,16 @@
                   <div class="col-6">
                     <div class="creat-acc">
                       <p>
-                        មិនមានគណនីមែនទេ?
-                        <a href="sign_up_page.html">បង្កើតគណនី​</a>
+                        មានគណនីរួចហើយមែនទេ?
+                        <a href="login_page.html">ចូលប្រើប្រាស់​</a>
                       </p>
                     </div>
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-4">
+                  <div class="col-12">
                     <div class="other-text">
-                      <h3>ឬចូលប្រើប្រាស់ជាមួយ</h3>
+                      <h3>ឬភ្ជាប់ជាមួយ</h3>
                     </div>
                   </div>
                 </div>
