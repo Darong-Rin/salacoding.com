@@ -163,9 +163,10 @@ header .navbar .navbar-nav .button a:nth-child(2):hover {
 
 /* !------ Hero Banner ------- */
 .hero-banner {
-  height: 100vh;
+  height: 92vh;
 }
 .hero-banner .banner .row {
+  padding-top: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -305,9 +306,7 @@ main .popular-courses .card {
   border: 1px solid #ddd;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  transition: 0.5s;
   cursor: pointer;
-  position: relative;
 }
 main .popular-courses .card .title {
   padding-left: 12px;
@@ -315,7 +314,6 @@ main .popular-courses .card .title {
 main .popular-courses .card .pic img {
   width: 100%;
   height: 180px;
-  transition: 0.5s;
 }
 main .popular-courses .card .title p {
   font-size: 20px;
@@ -354,7 +352,7 @@ main .popular-courses .card .card-bottom span:last-child {
   color: #0363ff;
 }
 main .popular-courses .card:hover {
-  transform: scale(103%);
+  transform: scale(105%);
 }
 /* main .popular-courses .card:hover img {
   transform: scale(110%);
@@ -379,7 +377,6 @@ main .free-book .title-header-book {
 }
 .free-book .card .pic-book img {
   width: 100%;
-
   transition: 0.5s;
 }
 .free-book .card .info-book {
@@ -586,6 +583,7 @@ main .faqs .details-faqs details p {
 }
 /* !------------------ Contact US ---------------------- */
 main .contact-us {
+  margin-top: 100px;
   background: linear-gradient(
     0deg,
     rgba(255, 255, 255, 1) 0%,
@@ -717,6 +715,7 @@ footer .content .logo p {
   color: #b9b9b9;
   text-align: left;
   margin-top: 10px;
+  text-align: center;
   padding-left: 30px;
 }
 footer .content .more-content h3 {
@@ -969,7 +968,6 @@ input.check-size {
 .form-signup .form-right .checkbox label a:hover {
   text-decoration: underline;
 }
-
 /* !-------------------------- */
 .animate__slow_1 {
   animation-duration: 1s !important;
